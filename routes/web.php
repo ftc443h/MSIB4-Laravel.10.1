@@ -13,6 +13,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// ------------------- Route Laravel -------------------
+//Route::get('/', function () {
+    //return view('welcome');
+//});
+
+// ------------------- Route Layout -------------------
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('layout.hero');
+});
+
+Route::get('/home', function () {
+    return view('layout.hero');
+});
+
+Route::get('/about', function () {
+    return view('layout.about');
+});
+
+Route::get('/team', function () {
+    return view('layout.team');
+});
+
+Route::get('/contact', function () {
+    return view('layout.contact');
+});
+
+Route::get('/login', function () {
+    return view('layout.login');
 });
